@@ -33,3 +33,4 @@ binary_sensor: !include binary_sensors.yaml
 switch: !include switches.yaml
 device_tracker: !include device_trackers.yaml
 mqtt: !include mqtt.yaml
+automation: !include automations.yaml

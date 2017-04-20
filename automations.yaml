@@ -1,0 +1,28 @@
+- alias: "Motion detected - Lights on"
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.bejarat_mozgas
+    from: 'off'
+    to: 'on'
+    
+  action:
+    service: homeassistant.turn_on
+    entity_id: 
+      - light.zipato_rgbw_led_bulb_level_3_0
+    data: 
+      brightness: 100
+      rgb_color: [255,0,0]
+
+- alias: "No more motion - Lights off"
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.bejarat_mozgas
+    from: 'on'
+    to: 'off'
+    for: 
+      minutes: 2
+    
+  action:
+    service: homeassistant.turn_off
+    entity_id: 
+      - light.zipato_rgbw_led_bulb_level_3_0
