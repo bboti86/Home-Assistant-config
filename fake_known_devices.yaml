@@ -1,0 +1,15 @@
+name_name:
+  hide_if_away: false
+  mac: XX:XX:XX:XX:XX:XX
+  name: Name
+  gravatar: name@example.com
+  track: false
+  vendor: Some Vendor
+
+name2_name2:
+  hide_if_away: false
+  mac: XX:XX:XX:XX:XX:XX
+  name: Name2
+  gravatar: name2@example.com
+  track: false
+  vendor: Some Other Vendor
