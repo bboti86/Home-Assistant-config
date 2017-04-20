@@ -8,7 +8,7 @@
   latitude: !secret NI_latitude
   longitude: !secret NI_longitude
   radius: 500
-  icon: mdi:code-brackets
+  icon: mdi:worker
   
 - name: Home
   latitude: !secret home_latitude

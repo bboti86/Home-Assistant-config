@@ -1,9 +1,21 @@
+default_view: 
+#főoldal
+  name: default_view
+  view: yes
+  entities: 
+   - group.nappali_zene_view
+   - group.bejarat_view
+   - group.idojaras_view
+   - media_player.lg_tv_remote
+   - group.all_lights
+  
 Nappali_zene_view:
-  #Nappaliban szóló zene vezérlése
+#Nappaliban szóló zene vezérlése
   name: Nappali zene
   entities:
     - switch.music
     - switch.volume
+
 Bejarat_view:
 #bejárati ajtó szenzorai
   name: Bejárati ajtó
@@ -11,6 +23,7 @@ Bejarat_view:
     - binary_sensor.bejarat_zarva
     - binary_sensor.bejarat_mozgas
     - binary_sensor.bejarat_szenzor_serult
+
 Idojaras_view: 
 #időjárással és levegőminőséggel kapcsolatos dolgok
   name: Időjárás
@@ -24,3 +37,11 @@ Idojaras_view:
     - sensor.waqi_debrecen_hajnal_u_debrecen
     - sensor.owm_pressure
     - sensor.owm_rain
+
+Automation: 
+#automatizmus kapcsolói
+  name: Automation
+  view: yes
+  entities: 
+    - automation.motion_detected__lights_on
+    - automation.no_more_motion__lights_off
