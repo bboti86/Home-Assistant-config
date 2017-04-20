@@ -7,7 +7,7 @@ default_view:
    - group.bejarat_view
    - group.idojaras_view
    - media_player.lg_tv_remote
-   - group.all_lights
+   - group.vilagitas
   
 Nappali_zene_view:
 #Nappaliban szóló zene vezérlése
@@ -37,6 +37,13 @@ Idojaras_view:
     - sensor.waqi_debrecen_hajnal_u_debrecen
     - sensor.owm_pressure
     - sensor.owm_rain
+
+vilagitas:
+#lámpák kezelése
+  name: Világítás
+  entities: 
+    - light.zipato_rgbw_led_bulb_level_2_0
+    - light.zipato_rgbw_led_bulb_level_3_0
 
 Automation: 
 #automatizmus kapcsolói
