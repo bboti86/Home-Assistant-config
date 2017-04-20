@@ -4,6 +4,13 @@ Nappali_zene_view:
   entities:
     - switch.music
     - switch.volume
+Bejarat_view:
+#bejárati ajtó szenzorai
+  name: Bejárati ajtó
+  entities: 
+    - binary_sensor.bejarat_zarva
+    - binary_sensor.bejarat_mozgas
+    - binary_sensor.bejarat_szenzor_serult
 Idojaras_view: 
 #időjárással és levegőminőséggel kapcsolatos dolgok
   name: Időjárás
@@ -17,10 +24,3 @@ Idojaras_view:
     - sensor.waqi_debrecen_hajnal_u_debrecen
     - sensor.owm_pressure
     - sensor.owm_rain
-Bejarat_view:
-#bejárati ajtó szenzorai
-  name: Bejárati ajtó
-  entities: 
-    - binary_sensor.bejarat_zarva
-    - binary_sensor.bejarat_mozgas
-    - binary_sensor.bejarat_szenzor_serult
