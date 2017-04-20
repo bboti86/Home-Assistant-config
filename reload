@@ -1,0 +1,3 @@
+sudo systemctl restart home-assistant@homeassistant.service
+cat /home/homeassistant/.homeassistant/home-assistant.log
+

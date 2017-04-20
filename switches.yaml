@@ -1,0 +1,9 @@
+#command line for music playback and stop
+- platform: command_line
+  switches:
+    music:
+      command_on: "/home/music/play"
+      command_off: "/home/music/stop"
+    volume:
+      command_on: "/home/music/volUp"
+      command_off: "/home/music/volDown"

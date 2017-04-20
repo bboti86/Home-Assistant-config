@@ -1,0 +1,4 @@
+#hálószoba TV
+- platform: lg_netcast
+  host: 192.168.1.126
+  access_token: !secret lg_tv_access_token

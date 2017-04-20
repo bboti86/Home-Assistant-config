@@ -1,0 +1,17 @@
+- name: IT Services Hungary
+  latitude: !secret IT_latitude
+  longitude: !secret IT_longitude
+  radius: 300
+  icon: mdi:laptop
+  
+- name: NI Hungary
+  latitude: !secret NI_latitude
+  longitude: !secret NI_longitude
+  radius: 500
+  icon: mdi:code-brackets
+  
+- name: Home
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  radius: 300
+  icon: mdi:home

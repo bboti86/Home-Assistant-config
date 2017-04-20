@@ -1,0 +1,11 @@
+- platform: template
+  sensors:
+    bejarat_zarva:
+      value_template: '{{ is_state("sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_access_control_4_9", "23") }}'
+      entity_id: sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_access_control_4_9
+    bejarat_mozgas:
+      value_template: '{{ is_state("sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_burglar_4_10", "8") }}'
+      entity_id: sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_burglar_4_10
+    bejarat_szenzor_serult:
+      value_template: '{{ is_state("sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_burglar_4_10", "3") }}'
+      entity_id: sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_burglar_4_10

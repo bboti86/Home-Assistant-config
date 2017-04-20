@@ -1,0 +1,26 @@
+Nappali_zene_view:
+  #Nappaliban szóló zene vezérlése
+  name: Nappali zene
+  entities:
+    - switch.music
+    - switch.volume
+Idojaras_view: 
+#időjárással és levegőminőséggel kapcsolatos dolgok
+  name: Időjárás
+  entities: 
+    - sensor.date
+    - sensor.time
+    - sun.sun
+    - sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_temperature_4_1
+    - sensor.owm_temperature
+    - sensor.owm_condition
+    - sensor.waqi_debrecen_hajnal_u_debrecen
+    - sensor.owm_pressure
+    - sensor.owm_rain
+Bejarat_view:
+#bejárati ajtó szenzorai
+  name: Bejárati ajtó
+  entities: 
+    - binary_sensor.bejarat_zarva
+    - binary_sensor.bejarat_mozgas
+    - binary_sensor.bejarat_szenzor_serult

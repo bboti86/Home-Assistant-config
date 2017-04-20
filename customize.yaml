@@ -1,0 +1,83 @@
+#sensors
+sensor.owm_temperature:
+  friendly_name: Külső hőmérséklet
+  icon: mdi:temperature-celsius
+sensor.date:
+  friendly_name: Dátum
+sensor.owm_condition:
+  friendly_name: Időjárás
+  icon: mdi:weather-partlycloudy
+sensor.owm_pressure:
+  friendly_name: Légnyomás
+sensor.owm_rain: 
+  friendly_name: Eső
+  icon: mdi:weather-pouring
+sensor.time:
+  friendly_name: Idő
+sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_access_control_4_9:
+  friendly_name: Bejárat zárva
+  icon: mdi:glassdoor
+  hidden: true
+sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_temperature_4_1:
+  friendly_name: Belső hőmérséklet
+  icon: mdi:temperature-celsius
+sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_alarm_level_4_1:
+  hidden: true
+sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_alarm_type_4_0:
+  hidden: true
+sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_burglar_4_10:
+  hidden: true
+sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_luminance_4_3:
+  hidden: true
+sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_sourcenodeid_4_2:
+  hidden: true
+sensor.waqi_debrecen_hajnal_u_debrecen:
+  friendly_name: Levegő Minőség
+  icon: mdi:airballoon
+sensor.waqi_debrecen_kalotaszeg_ter_debrecen:
+  hidden: true
+sensor.waqi_debrecen_klinika_debrecen:
+  hidden: true
+
+#media_players  
+media_player.lg_tv_remote:
+  friendly_name: Hálószoba TV
+sun.sun:
+  friendly_name: Napállás
+switch.music:
+  friendly_name: Nappali zene
+  icon: mdi:speaker
+switch.volume:
+  friendly_name: Nappali zene hangerő
+  icon: mdi:volume-high
+
+#binary_sensors
+binary_sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_sensor_4_0:
+  friendly_name: bejárat binary
+  hidden: true
+binary_sensor.bejarat_zarva:
+  friendly_name: Bejárat zárva
+  icon: mdi:glassdoor
+binary_sensor.bejarat_mozgas:
+  friendly_name: Mozgás a folyosón
+  icon: mdi:human-male
+binary_sensor.bejarat_szenzor_serult:
+  friendly_name: Szenzor probléma
+  icon: mdi:alert-octagon
+
+#z-wave devices
+zwave.zipato_rgbw_led_bulb_3:
+  hidden: true
+zwave.philio_technology_corporation_pst02a_4_in_1_multisensor_4:
+  hidden: true
+zwave.zipato_rgbw_led_bulb_2:
+  hidden: true
+zwave.zwaveme_razberry_controller_2016_zwave_1:
+  hidden: true
+
+#lights
+light.zipato_rgbw_led_bulb_level_2_0:
+  friendly_name: Hálószoba csillár
+  icon: mdi:hotel
+light.zipato_rgbw_led_bulb_level_3_0: 
+  friendly_name: Előszoba csillár

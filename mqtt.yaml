@@ -1,0 +1,4 @@
+broker: m21.cloudmqtt.com
+port: 18540
+username: !secret mosquitto_user
+password: !secret mosquitto_pass  

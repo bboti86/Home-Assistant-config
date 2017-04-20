@@ -1,0 +1,35 @@
+#basic settings
+homeassistant:
+  name: !secret home_name
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  elevation: !secret home_elevation
+  unit_system: metric
+  time_zone: !secret time_zone
+  customize: !include customize.yaml
+
+#simple components
+frontend:
+config:
+updater:
+discovery:
+conversation:
+history:
+logbook:
+sun:
+http:
+  api_password: !secret login_password
+tts:
+  platform: google
+zwave:
+    usb_path: /dev/ttyAMA0
+
+#includes
+zone: !include zones.yaml
+group: !include groups.yaml
+media_player: !include media_players.yaml
+sensor: !include sensors.yaml
+binary_sensor: !include binary_sensors.yaml
+switch: !include switches.yaml
+device_tracker: !include device_trackers.yaml
+mqtt: !include mqtt.yaml

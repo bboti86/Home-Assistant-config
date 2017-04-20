@@ -1,0 +1,20 @@
+- platform: time_date
+  #pontos idő
+  display_options: 
+    - 'time'
+    - 'date'
+- platform: waqi
+  #air quality
+  token: !secret air_quality_index_api
+  locations:
+    - debrecen
+  #stations:
+  # - Debrecen Hajnal u. 
+- platform: openweathermap
+  #weather
+  api_key: !secret open_weather_api
+  monitored_conditions:
+   - weather
+   - temperature
+   - pressure
+   - rain
