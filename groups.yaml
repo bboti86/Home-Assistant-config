@@ -50,5 +50,6 @@ Automation:
   name: Automation
   view: yes
   entities: 
-    - automation.motion_detected__lights_on
+    - automation.motion_detected__lights_on_nighttime
+    - automation.motion_detected__lights_on_daytime
     - automation.no_more_motion__lights_off
