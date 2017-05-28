@@ -3,7 +3,6 @@ default_view:
   view: true
   entities:
   - group.nappali_zene_view
-  - group.nappali_view
   - media_player.lg_tv_remote
   - group.bejarat_view
   - group.idojaras_view
@@ -19,10 +18,6 @@ Bejarat_view:
   - binary_sensor.bejarat_zarva
   - binary_sensor.bejarat_mozgas
   - binary_sensor.bejarat_szenzor_serult
-Nappali_view:
-  name: "Nappali Világítás"
-  entities:
-  - switch.nappali_lampa
 Idojaras_view:
   name: "Id\u0151j\xE1r\xE1s"
   entities:
@@ -40,6 +35,7 @@ vilagitas:
   entities:
   - light.zipato_rgbw_led_bulb_level_2_0
   - light.zipato_rgbw_led_bulb_level_3_0
+  - switch.nappali_lampa
 Automation:
   name: Automation
   view: true
