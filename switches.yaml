@@ -7,3 +7,11 @@
     volume:
       command_on: "/home/music/volUp"
       command_off: "/home/music/volDown"
+- platform: mqtt
+  name: "Nappali Lámpa"
+  command_topic: "cmnd/nappali_lampa/power"
+  state_topic: "stat/nappali_lampa/POWER"
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  retain: true

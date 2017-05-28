@@ -1,46 +1,64 @@
-- alias: "Motion detected - Lights on nighttime"
+- alias: Motion detected - Lights on nighttime
   trigger:
   - platform: state
     entity_id: binary_sensor.bejarat_mozgas
     from: 'off'
     to: 'on'
-  condition: 
+  condition:
     condition: sun
-    after: sunset    
+    after: sunset
   action:
     service: homeassistant.turn_on
-    entity_id: 
-      - light.zipato_rgbw_led_bulb_level_3_0
-    data: 
+    entity_id:
+    - light.zipato_rgbw_led_bulb_level_3_0
+    data:
       brightness: 100
-      rgb_color: [255,0,0]
-
-- alias: "No more motion - Lights off"
+      rgb_color:
+      - 255
+      - 0
+      - 0
+- alias: No more motion - Lights off
   trigger:
   - platform: state
     entity_id: binary_sensor.bejarat_mozgas
     from: 'on'
     to: 'off'
-    for: 
+    for:
       minutes: 2
   action:
     service: homeassistant.turn_off
-    entity_id: 
-      - light.zipato_rgbw_led_bulb_level_3_0
-      
-- alias: "Motion detected - Lights on daytime"
+    entity_id:
+    - light.zipato_rgbw_led_bulb_level_3_0
+- alias: Motion detected - Lights on daytime
   trigger:
   - platform: state
     entity_id: binary_sensor.bejarat_mozgas
     from: 'off'
     to: 'on'
-  condition: 
+  condition:
     condition: sun
     after: sunrise
   action:
     service: homeassistant.turn_on
-    entity_id: 
-      - light.zipato_rgbw_led_bulb_level_3_0
-    data: 
+    entity_id:
+    - light.zipato_rgbw_led_bulb_level_3_0
+    data:
       brightness: 100
-      rgb_color: [255,255,255]
+      rgb_color:
+      - 255
+      - 255
+      - 255
+- action:
+  - data:
+      brightness: 100
+      entity_id: light.zipato_rgbw_led_bulb_level_3_0
+      rgb_color: '[255,0,0]'
+      transition: 30
+    service: light.turn_on
+  alias: "El\u0151szoba Villany"
+  id: '1495373721808'
+  trigger:
+  - entity_id: binary_sensor.bejarat_mozgas
+    from: 'off'
+    platform: state
+    to: 'on'
