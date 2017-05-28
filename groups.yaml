@@ -3,6 +3,7 @@ default_view:
   view: true
   entities:
   - group.nappali_zene_view
+  - group.nappali_view
   - media_player.lg_tv_remote
   - group.bejarat_view
   - group.idojaras_view
